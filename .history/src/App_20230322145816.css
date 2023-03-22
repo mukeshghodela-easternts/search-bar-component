@@ -1,0 +1,157 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.o-search-container {
+  background: black;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+  height: 260px;
+  padding: 60px 25px;
+}
+
+.o-search-container h1 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.o-search-container fieldset.m-searchWidget {
+  position: relative;
+  border: none;
+  width: 85vw;
+  max-width: 500px;
+  margin: 0 auto !important;
+  padding: 0;
+}
+
+.o-search-container fieldset.m-searchWidget input {
+  width: 100%;
+  border: none;
+  padding: 16px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: Anko, sans-serif;
+  margin: 0;
+}
+
+.o-search-container fieldset.m-searchWidget span.a-searchIcon {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  font-size: 20px;
+  font-family: icon-kmart, sans-serif;
+  color: grey;
+}
+
+.o-search-container fieldset.m-searchWidget span.a-searchIcon::after {
+  content: '\e90f';
+}
+
+.o-search-container .m-search-results {
+  position: absolute;
+  background: #fff;
+  z-index: 90;
+  color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 300px;
+  max-width: 500px;
+  width: 85vw;
+  margin-top: 3px;
+  overflow-y: scroll;
+  text-align: left;
+  box-shadow: 0px 3px 6px 1px grey;
+  padding: 15px 0;
+}
+
+.o-search-container .m-search-results::-webkit-scrollbar {
+  width: 10px;
+}
+
+.o-search-container .m-search-results::-webkit-scrollbar-thumb {
+  background: darkgrey;
+}
+
+.o-search-container .m-search-results::-webkit-scrollbar-track {
+  background: lightgrey;
+}
+
+.o-search-container .m-search-results .a-result-title {
+  border-bottom: 3px solid lightgrey;
+  padding: 0 15px 15px;
+  color: grey;
+  cursor: default;
+}
+
+.o-search-container .m-search-results .a-result-link {
+  padding: 0 15px 15px;
+}
+
+.o-search-container .m-search-results .a-result-link a {
+  display: flex;
+  width: 460px;
+  flex-wrap: nowrap;
+}
+
+.o-search-container .m-search-results .a-result-link a>span.searchResult {
+  color: black;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.o-search-container .m-search-results .a-result-link a>span.searchResult span.boldText {
+  font-family: AnkoBold, sans-serif;
+  font-weight: bold;
+}
+
+.o-search-container .m-search-results .a-result-link a>span.searchCategory {
+  color: grey;
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 5px;
+  white-space: nowrap;
+}
