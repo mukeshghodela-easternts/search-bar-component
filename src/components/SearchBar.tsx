@@ -24,7 +24,7 @@ function SearchBar() {
 
     const searchItems = (): any => {
       return searchResults.map((el: any, index) => {
-        const txtIndex = el.question.toLowerCase().indexOf(inputValue)
+        const txtIndex = el.question.toLowerCase().indexOf(inputValue.toLowerCase())
         const txtLenght = inputValue.length
         return (
             txtIndex >= 0 ? 
@@ -40,7 +40,7 @@ function SearchBar() {
                     <span className="searchCategory desktop-up">{el.category}</span>
                 </Link>
             </div> :
-            <div className="a-result-link" key={index}>
+            <div className="a-result-link test" key={index}>
                 <Link to={el.link}>
                     <span className="searchResult">{el.question} -</span>
                     <span className="searchCategory desktop-down"> {el.category}</span>
