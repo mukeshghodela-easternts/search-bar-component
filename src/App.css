@@ -84,7 +84,7 @@
 }
 
 .o-search-container fieldset.m-searchWidget span.a-searchIcon::after {
-  content: '\e90f';
+  /* content: '\e90f'; */
 }
 
 .o-search-container .m-search-results {
@@ -93,7 +93,7 @@
   z-index: 90;
   color: black;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -17%);
   max-height: 300px;
   max-width: 500px;
   width: 85vw;
